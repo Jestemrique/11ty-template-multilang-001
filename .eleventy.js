@@ -8,6 +8,18 @@ module.exports = eleventyConfig => {
     });
 
 
+    //Import collections
+    const {
+        getBlogsEN,
+        getBlogsES,
+      } = require('./config/collections/index.js');
+
+    //Custom Collections
+    eleventyConfig.addCollection('blog_en', getBlogsEN);
+
+    eleventyConfig.addPlugin(require('./config/custom-filters.js'));
+    eleventyConfig.addFilter("debug", (content) => `${JSON.stringify(content, null , 4)}`);
+
     return {
         dir: {
             input: 'src',

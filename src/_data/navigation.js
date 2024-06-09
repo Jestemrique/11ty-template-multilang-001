@@ -6,7 +6,11 @@ module.exports = {
         },
         {
             text: 'About me',
-            url: '/en/about-me/'
+            url: '/en/about/'
+        },
+        {
+            text: 'Projects',
+            url: '/en/projects/'
         }
     ],
     es: [
@@ -16,7 +20,11 @@ module.exports = {
         },
         {
             text: 'Sobre mí',
-            url: '/es/sobre-mi/'
+            url: '/es/sobre/'
+        },
+        {
+            text: 'Proyectos',
+            url: '/es/proyectos/'
         }
     ]
 };
