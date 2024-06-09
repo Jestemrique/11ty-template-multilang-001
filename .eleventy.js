@@ -8,6 +8,17 @@ module.exports = eleventyConfig => {
     });
 
 
+    //Import collections
+    const {
+        getBlogsEN,
+        getBlogsES,
+      } = require('./config/collections/index.js');
+
+    //Custom Collections
+    eleventyConfig.addCollection('blog_en', getBlogsEN);
+
+
+
     return {
         dir: {
             input: 'src',
