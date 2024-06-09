@@ -1,7 +1,7 @@
 ---
 title: 'Sobre mí'
 description: 'Una subpágina en español'
-slugOverride: sobre mi
+permalink: /{{locale}}/sobre/index.html
 ---
 
 Página sobre mí. 
