@@ -3,8 +3,8 @@
 {% block main_content %}
 {{ content | safe }}
 
-{# {% set languagePosts = "posts_" + page.lang %}
-{%- for post in collections[languagePosts] -%}
+{% set postslist = "blog_" + page.lang %} 
+{% for post in collections[postslist] %} 
 <a      class="
             link-secondary 
             link-offset-2 
@@ -20,15 +20,7 @@
     <span class="fs-6">( {{ post.data.date | epDate(page.lang) }} ) </span>
     
 </a></br>
-{%- endfor -%} #}
 
-
-{% set postslist = "blog_" + page.lang %} 
-{{ postslist }}
-
-{% for post in collections[postslist] %} 
-
-   {% include "partials/blog-loop.njk" %}  
 {% endfor %}
 
 

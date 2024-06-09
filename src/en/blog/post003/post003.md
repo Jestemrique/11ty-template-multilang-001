@@ -1,5 +1,4 @@
 ---
-layout: 'layouts/post.njk'
 title: 'This is the post 003'
 tags: 
   - posts
